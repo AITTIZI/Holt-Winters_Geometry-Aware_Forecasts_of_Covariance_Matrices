@@ -1,0 +1,15 @@
+13:32:21 INFO    log file: results/logs/run_20261004_133221.log
+13:32:21 INFO    re-measuring the single-process cost benchmark ...
+13:32:50 INFO    study main:
+13:32:50 INFO    SPD audit passed: all 12800 le/airm evaluations produced only SPD forecasts and levels
+13:32:52 INFO    study fitloss:
+13:32:52 INFO    SPD audit passed: all 7200 le/airm evaluations produced only SPD forecasts and levels
+13:32:53 INFO    study sweep:
+13:32:54 INFO    SPD audit passed: all 27200 le/airm evaluations produced only SPD forecasts and levels
+13:32:58 INFO    study dim10:
+13:32:58 INFO    SPD audit passed: all 2400 le/airm evaluations produced only SPD forecasts and levels
+13:32:58 INFO    study dcc:
+13:32:58 INFO    SPD audit passed: all 2400 le/airm evaluations produced only SPD forecasts and levels
+13:33:00 INFO    tables written to results/summary
+13:33:14 INFO    figures written to results/figures
+13:33:14 INFO    total elapsed 53s

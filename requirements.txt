@@ -1,0 +1,8 @@
+# Exact versions that produced results/ (see results/run_config.json; Python 3.13.5).
+# The code needs at least numpy 2.0, scipy 1.13, pandas 2.2, matplotlib 3.9 and pytest 8.0,
+# but only the versions below are known to reproduce results/summary bit for bit.
+numpy==2.5.3
+scipy==1.18.1
+pandas==3.0.6
+matplotlib==3.11.2
+pytest==9.1.1

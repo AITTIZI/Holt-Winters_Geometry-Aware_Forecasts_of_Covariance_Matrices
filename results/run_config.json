@@ -1,0 +1,457 @@
+{
+  "settings": {
+    "n_steps": 500,
+    "n_train": 350,
+    "horizons": [
+      1,
+      5,
+      10,
+      20
+    ],
+    "floors": [
+      0.01,
+      0.001,
+      0.0001,
+      1e-06
+    ],
+    "base_seed": 20260924,
+    "configs": [
+      "main",
+      "ses",
+      "damped",
+      "noisy"
+    ],
+    "keep_forecasts_for_rep": 0,
+    "kept_horizons": [
+      1,
+      10
+    ],
+    "keep_data": true
+  },
+  "reps": 100,
+  "studies": {
+    "main": [
+      {
+        "scenario": "rotation",
+        "configs": [
+          "main",
+          "ses",
+          "damped",
+          "noisy"
+        ]
+      },
+      {
+        "scenario": "rotation_ou",
+        "configs": [
+          "main",
+          "ses",
+          "damped",
+          "noisy"
+        ]
+      },
+      {
+        "scenario": "cir",
+        "configs": [
+          "main",
+          "ses",
+          "damped",
+          "noisy"
+        ]
+      },
+      {
+        "scenario": "jump",
+        "configs": [
+          "main",
+          "ses",
+          "damped",
+          "noisy"
+        ]
+      }
+    ],
+    "fitloss": [
+      {
+        "scenario": "rotation",
+        "configs": [
+          "main",
+          "main_fitairm",
+          "main_fitfrob",
+          "damped",
+          "damped_fitairm",
+          "damped_fitfrob",
+          "noisy",
+          "noisy_fitairm",
+          "noisy_fitfrob"
+        ]
+      }
+    ],
+    "sweep": [
+      {
+        "scenario": "rotation[sigma=0.01]",
+        "configs": [
+          "main",
+          "damped"
+        ]
+      },
+      {
+        "scenario": "rotation[sigma=0.02]",
+        "configs": [
+          "main",
+          "damped"
+        ]
+      },
+      {
+        "scenario": "rotation[sigma=0.035]",
+        "configs": [
+          "main",
+          "damped"
+        ]
+      },
+      {
+        "scenario": "rotation[sigma=0.05]",
+        "configs": [
+          "main",
+          "damped"
+        ]
+      },
+      {
+        "scenario": "cir[kappa=0.05,feller=1.1]",
+        "configs": [
+          "main",
+          "noisy"
+        ]
+      },
+      {
+        "scenario": "cir[kappa=0.05,feller=2]",
+        "configs": [
+          "main",
+          "noisy"
+        ]
+      },
+      {
+        "scenario": "cir[kappa=0.05,feller=5]",
+        "configs": [
+          "main",
+          "noisy"
+        ]
+      },
+      {
+        "scenario": "cir[kappa=0.02,feller=1.1]",
+        "configs": [
+          "main",
+          "noisy"
+        ]
+      },
+      {
+        "scenario": "cir[kappa=0.2,feller=1.1]",
+        "configs": [
+          "main",
+          "noisy"
+        ]
+      },
+      {
+        "scenario": "rotation",
+        "configs": [
+          "noisy_nu10"
+        ]
+      },
+      {
+        "scenario": "rotation",
+        "configs": [
+          "noisy_nu25"
+        ]
+      },
+      {
+        "scenario": "rotation",
+        "configs": [
+          "noisy_nu50"
+        ]
+      },
+      {
+        "scenario": "rotation",
+        "configs": [
+          "noisy_nu200"
+        ]
+      },
+      {
+        "scenario": "rotation_ou",
+        "configs": [
+          "noisy_nu10"
+        ]
+      },
+      {
+        "scenario": "rotation_ou",
+        "configs": [
+          "noisy_nu25"
+        ]
+      },
+      {
+        "scenario": "rotation_ou",
+        "configs": [
+          "noisy_nu50"
+        ]
+      },
+      {
+        "scenario": "rotation_ou",
+        "configs": [
+          "noisy_nu200"
+        ]
+      },
+      {
+        "scenario": "cir",
+        "configs": [
+          "noisy_nu10"
+        ]
+      },
+      {
+        "scenario": "cir",
+        "configs": [
+          "noisy_nu25"
+        ]
+      },
+      {
+        "scenario": "cir",
+        "configs": [
+          "noisy_nu50"
+        ]
+      },
+      {
+        "scenario": "cir",
+        "configs": [
+          "noisy_nu200"
+        ]
+      },
+      {
+        "scenario": "jump",
+        "configs": [
+          "noisy_nu10"
+        ]
+      },
+      {
+        "scenario": "jump",
+        "configs": [
+          "noisy_nu25"
+        ]
+      },
+      {
+        "scenario": "jump",
+        "configs": [
+          "noisy_nu50"
+        ]
+      },
+      {
+        "scenario": "jump",
+        "configs": [
+          "noisy_nu200"
+        ]
+      }
+    ],
+    "dim10": [
+      {
+        "scenario": "rotation_n10",
+        "configs": [
+          "main",
+          "damped",
+          "noisy"
+        ]
+      }
+    ],
+    "dcc": [
+      {
+        "scenario": "dcc",
+        "configs": [
+          "main",
+          "damped",
+          "noisy"
+        ]
+      }
+    ]
+  },
+  "scenarios": [
+    "rotation",
+    "rotation_ou",
+    "cir",
+    "jump"
+  ],
+  "scenario_parameters": {
+    "rotation": {
+      "name": "rotation",
+      "eigenvalues": [
+        4.0,
+        1.0,
+        0.25
+      ],
+      "sigma": 0.02,
+      "drift_speed": 0.05
+    },
+    "cir": {
+      "name": "cir",
+      "theta": [
+        2.0,
+        1.0,
+        0.5
+      ],
+      "kappa": 0.05,
+      "feller": 1.1
+    },
+    "jump": {
+      "name": "jump",
+      "base": [
+        2.0,
+        1.0,
+        0.5
+      ],
+      "mu": 0.0,
+      "sigma": 0.05,
+      "jump_intensity": 0.02,
+      "jump_mean": 1.5,
+      "jump_std": 0.5,
+      "mean_reversion": 0.08,
+      "rotation_sigma": 0.01
+    },
+    "rotation_ou": {
+      "name": "rotation_ou",
+      "eigenvalues": [
+        4.0,
+        1.0,
+        0.25
+      ],
+      "sigma": 0.02,
+      "drift_speed": 0.05,
+      "kappa": 0.05,
+      "log_sd": 0.25
+    },
+    "rotation_n10": {
+      "name": "rotation_n10",
+      "n": 10,
+      "lambda_max": 4.0,
+      "lambda_min": 0.25,
+      "sigma": 0.02,
+      "drift_speed": 0.05
+    },
+    "dcc": {
+      "name": "dcc",
+      "variances": [
+        1.0,
+        1.5,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "garch_a": [
+        0.05,
+        0.06,
+        0.07,
+        0.08,
+        0.09
+      ],
+      "persistence": 0.98,
+      "dcc_a": 0.03,
+      "dcc_b": 0.95,
+      "rho": 0.4,
+      "burn_in": 250
+    }
+  },
+  "configs": {
+    "damped": {
+      "description": "Damped trend: alpha, beta, phi estimated",
+      "spec": "HoltWintersSpec(trend=True, damped=True, season_length=None, init_window=10, burn_in=20, alpha_bounds=(0.01, 1.0), beta_bounds=(0.0, 1.0), gamma_bounds=(0.0, 1.0), phi_bounds=(0.8, 0.98), loss='mse', huber_k=1.4, fit_metric='own')",
+      "noise_dof": null
+    },
+    "damped_fitairm": {
+      "description": "Damped trend: alpha, beta, phi estimated; all models fitted under the airm criterion",
+      "spec": "HoltWintersSpec(trend=True, damped=True, season_length=None, init_window=10, burn_in=20, alpha_bounds=(0.01, 1.0), beta_bounds=(0.0, 1.0), gamma_bounds=(0.0, 1.0), phi_bounds=(0.8, 0.98), loss='mse', huber_k=1.4, fit_metric='airm')",
+      "noise_dof": null
+    },
+    "damped_fitfrob": {
+      "description": "Damped trend: alpha, beta, phi estimated; all models fitted under the frobenius criterion",
+      "spec": "HoltWintersSpec(trend=True, damped=True, season_length=None, init_window=10, burn_in=20, alpha_bounds=(0.01, 1.0), beta_bounds=(0.0, 1.0), gamma_bounds=(0.0, 1.0), phi_bounds=(0.8, 0.98), loss='mse', huber_k=1.4, fit_metric='frobenius')",
+      "noise_dof": null
+    },
+    "main": {
+      "description": "Holt linear trend: alpha, beta estimated, phi = 1; noise-free observations",
+      "spec": "HoltWintersSpec(trend=True, damped=False, season_length=None, init_window=10, burn_in=20, alpha_bounds=(0.01, 1.0), beta_bounds=(0.0, 1.0), gamma_bounds=(0.0, 1.0), phi_bounds=(0.8, 0.98), loss='mse', huber_k=1.4, fit_metric='own')",
+      "noise_dof": null
+    },
+    "main_fitairm": {
+      "description": "Holt linear trend: alpha, beta estimated, phi = 1; noise-free observations; all models fitted under the airm criterion",
+      "spec": "HoltWintersSpec(trend=True, damped=False, season_length=None, init_window=10, burn_in=20, alpha_bounds=(0.01, 1.0), beta_bounds=(0.0, 1.0), gamma_bounds=(0.0, 1.0), phi_bounds=(0.8, 0.98), loss='mse', huber_k=1.4, fit_metric='airm')",
+      "noise_dof": null
+    },
+    "main_fitfrob": {
+      "description": "Holt linear trend: alpha, beta estimated, phi = 1; noise-free observations; all models fitted under the frobenius criterion",
+      "spec": "HoltWintersSpec(trend=True, damped=False, season_length=None, init_window=10, burn_in=20, alpha_bounds=(0.01, 1.0), beta_bounds=(0.0, 1.0), gamma_bounds=(0.0, 1.0), phi_bounds=(0.8, 0.98), loss='mse', huber_k=1.4, fit_metric='frobenius')",
+      "noise_dof": null
+    },
+    "noisy": {
+      "description": "Holt trend fitted to Wishart(nu = 50) realised covariances; scored against the latent truth",
+      "spec": "HoltWintersSpec(trend=True, damped=False, season_length=None, init_window=10, burn_in=20, alpha_bounds=(0.01, 1.0), beta_bounds=(0.0, 1.0), gamma_bounds=(0.0, 1.0), phi_bounds=(0.8, 0.98), loss='mse', huber_k=1.4, fit_metric='own')",
+      "noise_dof": 50
+    },
+    "noisy_fitairm": {
+      "description": "Holt trend fitted to Wishart(nu = 50) realised covariances; scored against the latent truth; all models fitted under the airm criterion",
+      "spec": "HoltWintersSpec(trend=True, damped=False, season_length=None, init_window=10, burn_in=20, alpha_bounds=(0.01, 1.0), beta_bounds=(0.0, 1.0), gamma_bounds=(0.0, 1.0), phi_bounds=(0.8, 0.98), loss='mse', huber_k=1.4, fit_metric='airm')",
+      "noise_dof": 50
+    },
+    "noisy_fitfrob": {
+      "description": "Holt trend fitted to Wishart(nu = 50) realised covariances; scored against the latent truth; all models fitted under the frobenius criterion",
+      "spec": "HoltWintersSpec(trend=True, damped=False, season_length=None, init_window=10, burn_in=20, alpha_bounds=(0.01, 1.0), beta_bounds=(0.0, 1.0), gamma_bounds=(0.0, 1.0), phi_bounds=(0.8, 0.98), loss='mse', huber_k=1.4, fit_metric='frobenius')",
+      "noise_dof": 50
+    },
+    "noisy_nu10": {
+      "description": "Holt trend fitted to Wishart(nu = 10) realised covariances; scored against the latent truth",
+      "spec": "HoltWintersSpec(trend=True, damped=False, season_length=None, init_window=10, burn_in=20, alpha_bounds=(0.01, 1.0), beta_bounds=(0.0, 1.0), gamma_bounds=(0.0, 1.0), phi_bounds=(0.8, 0.98), loss='mse', huber_k=1.4, fit_metric='own')",
+      "noise_dof": 10
+    },
+    "noisy_nu200": {
+      "description": "Holt trend fitted to Wishart(nu = 200) realised covariances; scored against the latent truth",
+      "spec": "HoltWintersSpec(trend=True, damped=False, season_length=None, init_window=10, burn_in=20, alpha_bounds=(0.01, 1.0), beta_bounds=(0.0, 1.0), gamma_bounds=(0.0, 1.0), phi_bounds=(0.8, 0.98), loss='mse', huber_k=1.4, fit_metric='own')",
+      "noise_dof": 200
+    },
+    "noisy_nu25": {
+      "description": "Holt trend fitted to Wishart(nu = 25) realised covariances; scored against the latent truth",
+      "spec": "HoltWintersSpec(trend=True, damped=False, season_length=None, init_window=10, burn_in=20, alpha_bounds=(0.01, 1.0), beta_bounds=(0.0, 1.0), gamma_bounds=(0.0, 1.0), phi_bounds=(0.8, 0.98), loss='mse', huber_k=1.4, fit_metric='own')",
+      "noise_dof": 25
+    },
+    "noisy_nu50": {
+      "description": "Holt trend fitted to Wishart(nu = 50) realised covariances; scored against the latent truth",
+      "spec": "HoltWintersSpec(trend=True, damped=False, season_length=None, init_window=10, burn_in=20, alpha_bounds=(0.01, 1.0), beta_bounds=(0.0, 1.0), gamma_bounds=(0.0, 1.0), phi_bounds=(0.8, 0.98), loss='mse', huber_k=1.4, fit_metric='own')",
+      "noise_dof": 50
+    },
+    "ses": {
+      "description": "Level only (beta = 0): simple exponential smoothing",
+      "spec": "HoltWintersSpec(trend=False, damped=False, season_length=None, init_window=10, burn_in=20, alpha_bounds=(0.01, 1.0), beta_bounds=(0.0, 1.0), gamma_bounds=(0.0, 1.0), phi_bounds=(0.8, 0.98), loss='mse', huber_k=1.4, fit_metric='own')",
+      "noise_dof": null
+    }
+  },
+  "models": [
+    "euclidean",
+    "le",
+    "airm"
+  ],
+  "wall_seconds": 2494.2677126249764,
+  "benchmark_seconds": 44.264981916872784,
+  "diagnostic_seconds": 109.34878350002691,
+  "workers": 8,
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6",
+    "matplotlib": "3.11.2"
+  },
+  "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "finished": "2026-10-04T13:09:50",
+  "realdata": {
+    "seconds": 1017.6661821668968,
+    "window": 360,
+    "refit_every": 12,
+    "horizons": [
+      1,
+      3,
+      6,
+      12
+    ]
+  },
+  "benchmark_remeasured": "2026-10-04T13:32:50"
+}

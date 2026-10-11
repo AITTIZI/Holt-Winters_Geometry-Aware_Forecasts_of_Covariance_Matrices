@@ -1,0 +1,10 @@
+[project]
+name = "spd-holt-winters"
+version = "1.0.0"
+description = "Euclidean vs Log-Euclidean vs AIRM Holt-Winters forecasting of SPD covariance matrices"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

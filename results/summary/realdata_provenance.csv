@@ -1,0 +1,3 @@
+dataset,file,url,sha256,downloaded_now,file_mtime_utc,source_note,industries
+ff5,5_Industry_Portfolios_daily_CSV.zip,https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/5_Industry_Portfolios_daily_CSV.zip,8ede64c6df9134ab5c372a264f31640ab6737b9f942f7207f62828005542c9d3,False,2026-10-04T05:13:28+00:00,This file was created using the 202608 CRSP database.,Cnsmr Manuf HiTec Hlth Other
+ff10,10_Industry_Portfolios_daily_CSV.zip,https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/10_Industry_Portfolios_daily_CSV.zip,12e33cce09517c9a2bb38cf75d43b5a15e65238848e864145d06d456e170161d,False,2026-10-04T05:13:54+00:00,This file was created using the 202608 CRSP database.,NoDur Durbl Manuf Enrgy HiTec Telcm Shops Hlth Utils Other

@@ -1,0 +1,14 @@
+13:46:30 INFO    log file: results/logs/run_20261004_134630.log
+13:46:31 INFO    study main:
+13:46:31 INFO    SPD audit passed: all 12800 le/airm evaluations produced only SPD forecasts and levels
+13:46:33 INFO    study fitloss:
+13:46:33 INFO    SPD audit passed: all 7200 le/airm evaluations produced only SPD forecasts and levels
+13:46:34 INFO    study sweep:
+13:46:34 INFO    SPD audit passed: all 27200 le/airm evaluations produced only SPD forecasts and levels
+13:46:39 INFO    study dim10:
+13:46:39 INFO    SPD audit passed: all 2400 le/airm evaluations produced only SPD forecasts and levels
+13:46:39 INFO    study dcc:
+13:46:39 INFO    SPD audit passed: all 2400 le/airm evaluations produced only SPD forecasts and levels
+13:46:41 INFO    tables written to results/summary
+13:46:55 INFO    figures written to results/figures
+13:46:55 INFO    total elapsed 24s

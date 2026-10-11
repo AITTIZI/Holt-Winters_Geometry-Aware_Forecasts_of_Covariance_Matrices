@@ -1,0 +1,56 @@
+12:25:36 INFO    log file: results/logs/run_20261004_122536.log
+12:25:36 INFO    running 3200 replications (studies main, fitloss, sweep, dim10, dcc) on 8 workers
+12:31:01 INFO      100/3200 replications done (325s elapsed)
+12:32:27 INFO      200/3200 replications done (411s elapsed)
+12:34:03 INFO      300/3200 replications done (508s elapsed)
+12:35:22 INFO      400/3200 replications done (587s elapsed)
+12:36:44 INFO      500/3200 replications done (668s elapsed)
+12:45:55 INFO      600/3200 replications done (1220s elapsed)
+12:47:49 INFO      700/3200 replications done (1333s elapsed)
+12:49:26 INFO      800/3200 replications done (1430s elapsed)
+12:50:56 INFO      900/3200 replications done (1520s elapsed)
+12:52:11 INFO      1000/3200 replications done (1595s elapsed)
+12:53:04 INFO      1100/3200 replications done (1649s elapsed)
+12:53:57 INFO      1200/3200 replications done (1701s elapsed)
+12:54:43 INFO      1300/3200 replications done (1748s elapsed)
+12:55:33 INFO      1400/3200 replications done (1797s elapsed)
+12:56:31 INFO      1500/3200 replications done (1856s elapsed)
+12:57:07 INFO      1600/3200 replications done (1891s elapsed)
+12:57:42 INFO      1700/3200 replications done (1927s elapsed)
+12:58:18 INFO      1800/3200 replications done (1962s elapsed)
+12:58:56 INFO      1900/3200 replications done (2001s elapsed)
+12:59:29 INFO      2000/3200 replications done (2033s elapsed)
+13:00:01 INFO      2100/3200 replications done (2065s elapsed)
+13:00:32 INFO      2200/3200 replications done (2096s elapsed)
+13:01:09 INFO      2300/3200 replications done (2134s elapsed)
+13:01:42 INFO      2400/3200 replications done (2166s elapsed)
+13:02:10 INFO      2500/3200 replications done (2194s elapsed)
+13:02:36 INFO      2600/3200 replications done (2221s elapsed)
+13:03:02 INFO      2700/3200 replications done (2246s elapsed)
+13:03:33 INFO      2800/3200 replications done (2277s elapsed)
+13:04:01 INFO      2900/3200 replications done (2305s elapsed)
+13:04:28 INFO      3000/3200 replications done (2332s elapsed)
+13:04:55 INFO      3100/3200 replications done (2359s elapsed)
+13:07:10 INFO      3200/3200 replications done (2494s elapsed)
+13:07:11 INFO    study main: 19200 metric rows saved
+13:07:11 INFO    study fitloss: 10800 metric rows saved
+13:07:13 INFO    study sweep: 40800 metric rows saved
+13:07:13 INFO    study dim10: 3600 metric rows saved
+13:07:13 INFO    study dcc: 3600 metric rows saved
+13:07:17 INFO    benchmarking computational overhead in a single process ...
+13:08:01 INFO    noise-bias diagnostic (re-fits the noisy configuration on the saved paths) ...
+13:09:50 INFO    simulation finished in 2494s (8 workers)
+13:09:51 INFO    study main:
+13:09:51 INFO    SPD audit passed: all 12800 le/airm evaluations produced only SPD forecasts and levels
+13:09:53 INFO    study fitloss:
+13:09:53 INFO    SPD audit passed: all 7200 le/airm evaluations produced only SPD forecasts and levels
+13:09:55 INFO    study sweep:
+13:09:55 INFO    SPD audit passed: all 27200 le/airm evaluations produced only SPD forecasts and levels
+13:09:59 INFO    study dim10:
+13:09:59 INFO    SPD audit passed: all 2400 le/airm evaluations produced only SPD forecasts and levels
+13:10:00 INFO    study dcc:
+13:10:00 INFO    SPD audit passed: all 2400 le/airm evaluations produced only SPD forecasts and levels
+13:10:01 INFO    tables written to results/summary
+13:10:14 INFO    figures written to results/figures
+13:10:14 INFO    total elapsed 2678s
+exit=0
